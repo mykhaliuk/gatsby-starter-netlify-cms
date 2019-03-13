@@ -1,6 +1,6 @@
 ---
 templateKey: help-section
-sectionTitle: sadd
+sectionTitle: general
 sectionIcon: /img/general.svg
 subject: Visitor Sign-in
 ---

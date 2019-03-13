@@ -237,7 +237,7 @@ collections:
             }
 
   - name: help
-    label: Help Section
+    label: Help Subject
     folder: src/pages/help
     slug: "{{slug}}"
     create: true
@@ -246,10 +246,58 @@ collections:
           label: "Template Key",
           name: templateKey,
           widget: hidden,
-          default: "help-section",
+          default: "help",
         }
       - { label: Image, name: image, widget: image }
       - { label: Title, name: title, widget: string }
-      - { label: "Publish Date", name: date, widget: datetime }
-      - { label: Body, name: body, widget: markdown }
-      - { label: Tags, name: tags, widget: list }
+
+  - name: "help-section"
+    label: "Help Section"
+    identifier_field: title
+    folder: src/pages/help/sections
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: templateKey,
+          widget: hidden,
+          default: "help-section",
+        }
+      - { name: title, label: Title, widget: string }
+      - { name: icon, label: Icon, widget: image }
+      - {
+          name: subject,
+          label: Subject,
+          widget: relation,
+          collection: help,
+          searchFields: [title],
+          displayFields: [title],
+          valueField: title,
+        }
+
+  - name: help-article
+    label: Article
+    folder: src/pages/help/articles
+    identifier_field: title
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: templateKey,
+          widget: hidden,
+          default: "help-article",
+        }
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: body, label: body, widget: markdown }
+      - {
+          name: section,
+          label: Section,
+          widget: relation,
+          collection: help-section,
+          searchFields: [subject, title],
+          displayFields: [subject, title],
+          valueField: title,
+        }

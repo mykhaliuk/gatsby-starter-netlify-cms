@@ -1,7 +1,7 @@
 ---
 templateKey: help-section
-title: Visitor Sign-in
-icon: /img/visitor-photo.svg
+title: general
+icon: /img/general.svg
 subject: Visitor Sign-in
 ---
 

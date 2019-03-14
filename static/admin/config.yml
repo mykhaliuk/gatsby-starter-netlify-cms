@@ -240,12 +240,14 @@ collections:
     label: Help Subject
     folder: src/pages/help
     slug: "{{slug}}"
+    identifier_field: title
     create: true
     fields:
       - {
           label: "Template Key",
           name: templateKey,
           widget: hidden,
+          #TODO: rename to help-subject
           default: "help",
         }
       - { label: Image, name: image, widget: image }
@@ -274,6 +276,7 @@ collections:
           searchFields: [title],
           displayFields: [title],
           valueField: title,
+          multiple: true,
         }
 
   - name: help-article
@@ -293,11 +296,20 @@ collections:
       - { name: description, label: Description, widget: text }
       - { name: body, label: body, widget: markdown }
       - {
+          name: subject,
+          label: Subject,
+          widget: relation,
+          collection: help,
+          searchFields: [title],
+          displayFields: [title],
+          valueField: title,
+        }
+      - {
           name: section,
           label: Section,
           widget: relation,
           collection: help-section,
-          searchFields: [subject, title],
-          displayFields: [subject, title],
+          searchFields: [title],
+          displayFields: [title],
           valueField: title,
-        }
+      }

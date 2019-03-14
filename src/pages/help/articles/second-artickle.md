@@ -4,7 +4,8 @@ title: Second Article
 description: >-
   description description description description description description
   description description description description description
-section: Basic
+subject: User Interface
+section: General
 ---
 # content content content content content content 
 

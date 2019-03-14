@@ -1,6 +1,6 @@
 ---
 templateKey: help-article
-title: First Article
+title: Second Article
 description: >-
   description description description description description description
   description description description description description

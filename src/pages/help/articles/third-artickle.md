@@ -4,7 +4,7 @@ title: Third Article
 description: >-
   description description description description description description
   description description description description description
-section: Basic
+section: General
 ---
 # content content content content content content 
 

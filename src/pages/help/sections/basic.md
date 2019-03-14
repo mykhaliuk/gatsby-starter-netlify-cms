@@ -1,7 +1,7 @@
 ---
 templateKey: help-section
 title: Basic
-icon: /img/general.svg
+icon: /img/the-basics.svg
 subject: Visitor Sign-in
 ---
 

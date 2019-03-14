@@ -4,7 +4,7 @@ title: First Article
 description: >-
   description description description description description description
   description description description description description
-section: general
+section: Basic
 ---
 # content content content content content content 
 

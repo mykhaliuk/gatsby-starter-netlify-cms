@@ -55,5 +55,90 @@ articles:
       can help.
     section: Delivery
     title: About delivery management
+  - body: >-
+      # How Deliveries works
+
+
+      Deliveries is a digital solution that helps you manage packages and
+      deliveries that arrive at your office.
+
+
+      * You use your phone to snap a photo of each delivery’s shipping label.
+      Envoy uses optical character recognition to “read” the recipient’s name
+      and match it with an employee in your directory.
+
+      * Then, that person gets automatically notified to pick up their delivery.
+      When they come to the designated delivery area, they’ll collect their
+      package. They can mark it as ‘picked up’ in one of two ways: either on an
+      (optional) iPad kiosk or directly from their notification.
+
+      * If the delivery doesn’t get picked up in a timely manner, Envoy
+      Deliveries can send automatic reminders on the schedule of your choice.
+
+
+      Envoy Deliveries is free to use for up to 100 deliveries per month. And if
+      you have a more active office, pricing starts at $159 per month, per
+      delivery area.
+
+
+      # Deliveries key features
+
+
+      ## Recording deliveries
+
+
+      The first step is recording a new delivery. With Envoy Deliveries, you
+      don’t need a barcode scanner or special equipment. All you need is your
+      phone.
+
+
+      To record a delivery, just open the Envoy Deliveries mobile app (available
+      on iOS and Android) and snap a photo of the shipping label. The rest
+      happens automatically. The name on the label is processed and the delivery
+      is added to your delivery log.
+
+
+      ## Notifications
+
+
+      Envoy Deliveries will alert your team members when their deliveries are
+      recorded. These instant, automatic notifications mean you’ll never have to
+      manually call or message someone to pick up their deliveries. Currently,
+      notifications can be sent via email and Slack— and more notification
+      methods are coming soon!
+
+
+      ## Delivery pick-up
+
+
+      Recipients must mark their deliveries as ‘picked up’ when they come to
+      collect them. Otherwise, Envoy Deliveries will not know they’ve been
+      collected. Until a delivery is marked as ‘picked up,’ the recipient will
+      continue to receive reminder notifications.
+
+
+      > If you’re not a Global Admin, we’d still love to you to sign up! When
+      you do so, your Global Admin(s) will be notified that you’re interested in
+      Deliveries.
+
+
+      1. Go to envoy.com/deliveries.
+
+      2. Enter your work email address at the top of the page and click “Sign
+      up.”
+
+      3. Complete the guided account setup steps.
+
+      4. Download the Envoy Deliveries mobile app, which is available for
+      download on the App Store for iOS devices and Google Play for Android
+      devices.
+
+      5. Grab a package or a piece of mail.
+
+      6. Open the Envoy Deliveries mobile app, and tap “Add delivery” to log
+      your first delivery.
+    description: Learn about the features and benefits of Envoy Deliveries.
+    section: The basics
+    title: About Envoy Deliveries
 ---
 

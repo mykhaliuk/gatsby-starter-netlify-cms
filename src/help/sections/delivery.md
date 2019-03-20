@@ -1,5 +1,5 @@
 ---
 title: Delivery
-icon: /img/package.svg
+image: /img/package.svg
 ---
 

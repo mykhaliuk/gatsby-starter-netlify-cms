@@ -97,13 +97,11 @@ exports.createPages = ({ actions, graphql, createNodeId }) => {
 
     // Create help articles pages
     helpArticles.forEach(article => {
-      const slug = _.kebabCase(article.title);
       createPage({
-        path: `/${slug}/`,
+        path: `/${_.kebabCase(article.title)}/`,
         component: path.resolve(`src/templates/article.js`),
         context: {
-          slug,
-          id: article.id
+          title: article.title
         }
       });
     });
@@ -129,8 +127,7 @@ exports.onCreateNode = ({
     });
   }
 
-
-  // Create help articles node to be able query them
+  // Create help articles nodes to be able query them
   if (node.frontmatter && node.frontmatter.templateKey === "help-subject") {
     let articles = [];
     //find all articles in subject nodes
@@ -142,7 +139,7 @@ exports.onCreateNode = ({
       createNode({
         ...a,
         // Required fields
-        id: a.id,
+        id: createNodeId(a.title),
         parent: a.subject, // or null if it's a source node without a parent
         children: [],
         internal: {

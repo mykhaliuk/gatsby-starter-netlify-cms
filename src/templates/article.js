@@ -10,8 +10,7 @@ export const HelpArticleTemplate = ({
   description,
   content,
   helmet,
-  contentComponent,
-  table
+  contentComponent
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -26,8 +25,6 @@ export const HelpArticleTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
-            ------------------------------------------------
-            <PostContent content={table} />
           </div>
         </div>
       </div>
@@ -40,28 +37,28 @@ HelpArticleTemplate.propTypes = {
   title: PropTypes.string,
   content: PropTypes.object,
   helmet: PropTypes.object,
-  contentComponent: PropTypes.func,
-  table: PropTypes.func
+  contentComponent: PropTypes.func
 };
 
 const HelpArticle = props => {
-  console.log( props )
-  const { markdownRemark: article } = props.data;
+  console.log(props);
+  const {
+    helpArticle: { title, description, body }
+  } = props.data;
 
   return (
     <Layout>
       <HelpArticleTemplate
-        content={article.html}
+        title={title}
+        description={description}
+        content={body}
         contentComponent={HTMLContent}
-        description={article.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{`${article.frontmatter.title}`}</title>
-            <meta name="description" content={`${article.html}`} />
+            <title>{`${title}`}</title>
+            <meta name="description" content={`${body}`} />
           </Helmet>
         }
-        title={article.frontmatter.title}
-        table={article.tableOfContents}
       />
     </Layout>
   );
@@ -75,20 +72,12 @@ HelpArticleTemplate.propTypes = {
 
 export default HelpArticle;
 
-// export const pageQuery = graphql`
-//   query HelpArticleTemplateQuery($title: String!) {
-//     markdownRemark(title: { eq: $title }) {
-//       id
-//       html
-//       tableOfContents
-//       frontmatter {
-//         title
-//         description
-//         body
-//       }
-//       fields {
-//         slug
-//       }
-//     }
-//   }
-// `;
+export const pageQuery = graphql`
+  query HelpArticleTemplateQuery($title: String!) {
+    helpArticle(title: { eq: $title }) {
+      title
+      description
+      body
+    }
+  }
+`;

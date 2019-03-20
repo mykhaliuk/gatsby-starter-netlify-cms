@@ -239,7 +239,7 @@ collections:
 
   - name: help-subject
     label: Help Subject
-    folder: src/help/subjects
+    folder: src/pages/help/subjects
     slug: "{{slug}}"
     identifier_field: title
     create: true

@@ -1,10 +1,18 @@
-const _ = require('lodash')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const _ = require("lodash");
+const path = require("path");
+const uuid = require("uuid/v1");
+const crypto = require("crypto");
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+const { createFilePath } = require("gatsby-source-filesystem");
+const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const digest = data => {
+  return crypto
+    .createHash(`md5`)
+    .update(JSON.stringify(data))
+    .digest(`hex`);
+};
+exports.createPages = ({ actions, graphql, createNodeId }) => {
+  const { createPage, createNode } = actions;
 
   return graphql(`
     {
@@ -16,8 +24,15 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
+              title
               tags
               templateKey
+              articles {
+                section
+                title
+                description
+                body
+              }
             }
           }
         }
@@ -25,14 +40,14 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
+      result.errors.forEach(e => console.error(e.toString()));
+      return Promise.reject(result.errors);
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(edge => {
-      const id = edge.node.id
+      const id = edge.node.id;
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
@@ -41,47 +56,102 @@ exports.createPages = ({ actions, graphql }) => {
         ),
         // additional data can be passed via context
         context: {
-          id,
-        },
-      })
-    })
+          id
+        }
+      });
+    });
 
     // Tag pages:
-    let tags = []
+    let tags = [];
     // Iterate through each post, putting all found tags into `tags`
     posts.forEach(edge => {
       if (_.get(edge, `node.frontmatter.tags`)) {
-        tags = tags.concat(edge.node.frontmatter.tags)
+        tags = tags.concat(edge.node.frontmatter.tags);
       }
-    })
+    });
     // Eliminate duplicate tags
-    tags = _.uniq(tags)
-
+    tags = _.uniq(tags);
     // Make tag pages
     tags.forEach(tag => {
-      const tagPath = `/tags/${_.kebabCase(tag)}/`
-
+      const tagPath = `/tags/${_.kebabCase(tag)}/`;
       createPage({
         path: tagPath,
         component: path.resolve(`src/templates/tags.js`),
         context: {
-          tag,
-        },
-      })
-    })
-  })
-}
+          tag
+        }
+      });
+    });
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
+    // Help articles pages:
+    let helpArticles = [];
+    // Iterate through each post, putting all found articles into `helpArticles`
+    posts.forEach(edge => {
+      if (_.get(edge, `node.frontmatter.articles`)) {
+        edge.node.frontmatter.articles.forEach(article => {
+          article.subject = edge.node.id;
+        });
+        helpArticles = helpArticles.concat(edge.node.frontmatter.articles);
+      }
+    });
+
+    // Create help articles pages
+    helpArticles.forEach(article => {
+      const slug = _.kebabCase(article.title);
+      createPage({
+        path: `/${slug}/`,
+        component: path.resolve(`src/templates/article.js`),
+        context: {
+          slug,
+          id: article.id
+        }
+      });
+    });
+  });
+};
+
+exports.onCreateNode = ({
+  node,
+  actions,
+  getNode,
+  createNodeId,
+  createContentDigest
+}) => {
+  const { createNodeField, createNode } = actions;
+  fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
-      value,
-    })
+      value
+    });
   }
-}
+
+
+  // Create help articles node to be able query them
+  if (node.frontmatter && node.frontmatter.templateKey === "help-subject") {
+    let articles = [];
+    //find all articles in subject nodes
+    node.frontmatter.articles.forEach(a => {
+      articles = _.concat(articles, a);
+    });
+    //create articles nodes
+    articles.forEach(a => {
+      createNode({
+        ...a,
+        // Required fields
+        id: a.id,
+        parent: a.subject, // or null if it's a source node without a parent
+        children: [],
+        internal: {
+          type: `helpArticle`,
+          // todo: make it work!
+          // mediaType: "text/markdown",
+          contentDigest: createContentDigest(a)
+        }
+      });
+    });
+  }
+};

@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
@@ -236,9 +237,9 @@ collections:
                 ],
             }
 
-  - name: help
+  - name: help-subject
     label: Help Subject
-    folder: src/pages/help
+    folder: src/help/subjects
     slug: "{{slug}}"
     identifier_field: title
     create: true
@@ -247,18 +248,36 @@ collections:
           label: "Template Key",
           name: templateKey,
           widget: hidden,
-          #TODO: rename to help-subject
-          default: "help",
+          default: "help-subject",
         }
       - { label: Image, name: image, widget: image }
       - { label: Title, name: title, widget: string }
+      - {
+          label: Arcticles,
+          name: articles,
+          widget: list,
+          fields:
+            [
+              { label: Article title, name: title, widget: string },
+              {
+                label: Section,
+                name: section,
+                widget: relation,
+                collection: help-section,
+                searchFields: [title],
+                displayFields: [title],
+                valueField: title,
+              },
+              { label: Description, name: description, widget: text },
+              { label: Content, name: body, widget: markdown },
+            ],
+        }
 
-  - name: "help-section"
-    label: "Help Section"
+  - name: help-section
+    label: Help sections
     identifier_field: title
-    folder: src/pages/help/sections
     create: true
-    slug: "{{slug}}"
+    folder: src/pages/help/sections
     fields:
       - {
           label: "Template Key",
@@ -266,50 +285,5 @@ collections:
           widget: hidden,
           default: "help-section",
         }
-      - { name: title, label: Title, widget: string }
-      - { name: icon, label: Icon, widget: image }
-      - {
-          name: subject,
-          label: Subject,
-          widget: relation,
-          collection: help,
-          searchFields: [title],
-          displayFields: [title],
-          valueField: title,
-          multiple: true,
-        }
-
-  - name: help-article
-    label: Article
-    folder: src/pages/help/articles
-    identifier_field: title
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: templateKey,
-          widget: hidden,
-          default: "help-article",
-        }
-      - { name: title, label: Title, widget: string }
-      - { name: description, label: Description, widget: text }
-      - { name: body, label: body, widget: markdown }
-      - {
-          name: subject,
-          label: Subject,
-          widget: relation,
-          collection: help,
-          searchFields: [title],
-          displayFields: [title],
-          valueField: title,
-        }
-      - {
-          name: section,
-          label: Section,
-          widget: relation,
-          collection: help-section,
-          searchFields: [title],
-          displayFields: [title],
-          valueField: title,
-      }
+      - { label: Title, name: title, widget: string }
+      - { label: Icon, name: image, widget: image }

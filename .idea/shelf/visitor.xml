@@ -1,0 +1,24 @@
+<changelist name="visitor" date="1552566746008" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/visitor/shelved.patch" />
+  <option name="DESCRIPTION" value="visitor" />
+  <binary>
+    <option name="BEFORE_PATH" value="public/img/coffee-gear.png" />
+    <option name="AFTER_PATH" value="public/img/coffee-gear.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/visitor/coffee-gear.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="public/img/coffee.png" />
+    <option name="AFTER_PATH" value="public/img/coffee.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/visitor/coffee.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="public/img/meeting-space.png" />
+    <option name="AFTER_PATH" value="public/img/meeting-space.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/visitor/meeting-space.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="public/img/tutorials.png" />
+    <option name="AFTER_PATH" value="public/img/tutorials.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/visitor/tutorials.png" />
+  </binary>
+</changelist>

@@ -11,33 +11,34 @@ class HelpSections extends React.Component {
       <div className="columns is-multiline">
         {sections &&
           sections.map(({ node: section }) => {
-            const { image }  = section.frontmatter
-            console.log( image )
+            const { image } = section.frontmatter;
+
             return (
               <div className="is-parent column is-6" key={section.id}>
-                <article className="tile is-child box notification">
-                  <img
-                    src={
-                      `${!!image && !!image.childImageSharp
-                        ? image.childImageSharp.fluid.src
-                        : image}`
-                    }
-                    alt=""
-                  />
-                  <p>
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={section.fields.slug}
-                    >
-                      {section.frontmatter.title}
-                    </Link>
-                  </p>
-                  <p>
-                    <Link className="button" to={section.fields.slug}>
-                      Browse articles →
-                    </Link>
-                  </p>
-                </article>
+                <Link
+                  className="title has-text-primary is-size-4"
+                  to={section.fields.slug}
+                >
+                  <article className="tile is-child box notification">
+                    <img
+                      src={`${
+                        !!image && !!image.childImageSharp
+                          ? image.childImageSharp.fluid.src
+                          : image.publicURL
+                      }`}
+                      alt={!!image ? image.relativePath : ""}
+                      style={{
+                        width: "5rem",
+                        height: "5rem",
+                        display: 'block',
+                        margin: '0 auto'
+                      }}
+                    />
+
+                    {section.frontmatter.title}
+                    <p>Browse articles →</p>
+                  </article>
+                </Link>
               </div>
             );
           })}
@@ -59,27 +60,22 @@ export default () => (
     query={graphql`
       query HelpSectionsQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "help-section" } } }
+          filter: { frontmatter: { templateKey: { eq: "help-subject" } } }
+          sort: { order: DESC, fields: [frontmatter___title] }
         ) {
+          totalCount
           edges {
             node {
-              excerpt(pruneLength: 400)
               id
               fields {
                 slug
               }
               frontmatter {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 2048, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
                 title
-                templateKey
-                date(formatString: "MMMM DD, YYYY")
+                image {
+                  publicURL
+                  relativePath
+                }
               }
             }
           }

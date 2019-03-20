@@ -1,10 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
-import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
 export const HelpSectionTemplate = ({ icon, title }) => {
   return (
@@ -12,10 +9,29 @@ export const HelpSectionTemplate = ({ icon, title }) => {
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <pre>{icon}</pre>
+            <div>
+              <img
+                src={icon ? icon.publicURL : null}
+                alt={icon ? icon.name : null}
+                style={{
+                  height: "3rem",
+                  width: "3rem",
+                  position: "relative",
+                  top: "10px"
+                }}
+              />
+              <h1
+                className="title is-size-2 has-text-weight-bold is-bold-light"
+                style={{
+                  color: "#4cb75b",
+                  display: "inline-block",
+                  paddingLeft: "1rem",
+                  margin: "0 0 1.5rem 0"
+                }}
+              >
+                {title}
+              </h1>
+            </div>
           </div>
         </div>
       </div>
@@ -24,17 +40,18 @@ export const HelpSectionTemplate = ({ icon, title }) => {
 };
 
 HelpSectionTemplate.propTypes = {
-  icon: PropTypes.object,
+  icon: PropTypes.string,
   title: PropTypes.string
 };
 
 const HelpSection = ({ data }) => {
-  const { markdownRemark: section } = data;
+  console.log('\nHelpSection data: ', data);
+  const { section } = data;
 
   return (
     <Layout>
       <HelpSectionTemplate
-        icon={section.frontmatter.image}
+        icon={section.frontmatter.icon}
         title={section.frontmatter.title}
       />
     </Layout>
@@ -49,15 +66,15 @@ HelpSection.propTypes = {
 
 export default HelpSection;
 
-export const pageQuery = graphql`
+export const HelpSectionPageQuery = graphql`
   query HelpSectionByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    section: markdownRemark(id: { eq: $id }) {
       id
-      frontmatter {
+      frontmatter{
         title
-        icon {
+        image{
+          name
           publicURL
-          relativePath
         }
       }
     }

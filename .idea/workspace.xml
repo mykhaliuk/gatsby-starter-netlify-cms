@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77166f83-998d-457a-a370-fe999ba2437e" name="Default Changelist" comment="structure">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ArticleList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/help/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/help/sections/delivery.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/help/sections/the-basics.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/help/subjects/forth.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/help/subjects/user-interface.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/help/subjects/visitor-sign-in.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/6349ae526cc9c1bda276.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/cms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/cms.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/cms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/cms.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/d2c34ccd69f8999776b6.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/blog-index.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/chemex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/coffee-gear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/flavor_wheel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/general.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/home-jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/meeting-space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/og-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products-full-width.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products-grid1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/tutorials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/visitor-photo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/render-page.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/0615cac8ff654dd71a30b8376f4698c8/13394/meeting-space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/0615cac8ff654dd71a30b8376f4698c8/45a4b/meeting-space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/0615cac8ff654dd71a30b8376f4698c8/465e4/meeting-space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/19a6d5ab24bbc3b3531f11ecab349683/be201/flavor_wheel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/19a6d5ab24bbc3b3531f11ecab349683/ffe38/flavor_wheel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/4d06c3734be9ff5220b79ddf8e62eed9/20f03/products-grid1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/4d06c3734be9ff5220b79ddf8e62eed9/6b1dd/products-grid1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/4d06c3734be9ff5220b79ddf8e62eed9/85941/products-grid1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/4d06c3734be9ff5220b79ddf8e62eed9/c64d8/products-grid1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/4d06c3734be9ff5220b79ddf8e62eed9/ca9aa/products-grid1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/534958a2cee3bb524a0bae118f2a4219/5fdec/home-jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/534958a2cee3bb524a0bae118f2a4219/81d61/home-jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/534958a2cee3bb524a0bae118f2a4219/cf3c3/home-jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/7f1f551492123e68d7e2890ea7f2513b/5fdec/jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/7f1f551492123e68d7e2890ea7f2513b/81d61/jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/7f1f551492123e68d7e2890ea7f2513b/cf3c3/jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/85357520b02403983a231bb940d46f8c/7f223/products-full-width.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/85357520b02403983a231bb940d46f8c/961c9/products-full-width.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/85357520b02403983a231bb940d46f8c/acf53/products-full-width.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/197bc/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/2b7f9/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/481bb/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/72429/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/8e318/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/9b524/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/95424a081ffe82635d22b755ce7ec986/d2f14/products-grid3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/197bc/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/2b7f9/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/481bb/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/72429/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/8e318/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/9b524/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/9827e8b51453c398abd7cc9d8f12217f/d2f14/products-grid2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/aaf5429bb1b60b92b5128fa6c7ea1802/13394/coffee-gear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/aaf5429bb1b60b92b5128fa6c7ea1802/45a4b/coffee-gear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/aaf5429bb1b60b92b5128fa6c7ea1802/465e4/coffee-gear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/ad53658d229612b8d23d0307be253419/5361c/chemex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/ad53658d229612b8d23d0307be253419/932a4/chemex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/ad53658d229612b8d23d0307be253419/a73f3/chemex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/c888be624dd466aee6108879d7115f25/13394/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/c888be624dd466aee6108879d7115f25/45a4b/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/c888be624dd466aee6108879d7115f25/465e4/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/120/path---products-6-ef-42b-wCuDSXRWTG9MuTOeT8JTV8RXJI.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/132/path---tags-jamaica-ed-8-e41-Tk8fQOXJowlz2POfyMnFEpGpb1o.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/136/path---tags-flavor-980-19d-11xIA45iboOue9splzo0uc0NY5o.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/146/path---tags-green-beans-dce-340-AdP839E5Dg9QKXfCdJYDDbwriCo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/214/path---tags-tasting-3-e-1-687-7G62MZeMxmmVmi2XOyk3sPNPI.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/233/path---help-7-ab-134-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/248/path---blog-2016-12-17-making-sense-of-the-scaas-new-flavor-wheel-94-c-8dd-Rvka7Hqg1HpVDOSsSck4L5tuU70.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/275/path---contact-file-upload-b-1-a-f7d-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/32/path---blog-f-7-a-05d-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/376/path---blog-2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week-850-fd3-OsFFy2VYxAP4S2ucgqK3XWqD4eE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/3927885152.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/4083697566.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/415849508.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/431/path---contact-examples-142-f5a-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/507/path---blog-2017-01-04-a-beginners-guide-to-brewing-with-chemex-19-c-fb5-TX6LI6f9zhBI5IXXKELpKrBc0I.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/525/path---contact-thanks-367-a2f-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/562/path---tags-brewing-d-36-21b-2sGR0i5ZWWeFUFWok0cV9UuvlO8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/588/path---index-6a9-J7xRHdTDRPovIondQFp9Ao1Ew.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/686/path---contact-26-a-cd9-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/805/path---tags-chemex-13-a-177-60mleDpA5wNDVK0rPUsvpwhcl4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/829/path---about-f-34-4c2-WLw6UnreTNki30dRwSu8GEdHE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/ff0e661c34f34669040da31d81b423f5/13394/tutorials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/ff0e661c34f34669040da31d81b423f5/45a4b/tutorials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/ff0e661c34f34669040da31d81b423f5/465e4/tutorials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/visitor-photo-382f730660dd899740fdd1d75ba197dc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelpSections.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelpSections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/articles/first-artickle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/articles/second-artickle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/articles/third-artickle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/sections/basic.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/sections/general.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/user-interface.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/visitor-sign-in.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/tags/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/tags/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/help-article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/help-section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/help-section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/help-subject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/shelf/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gatsby-starter-netlify-cms" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.46699268">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/admin/config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="558">
+                  <caret line="282" column="9" lean-forward="true" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#141#737#0" />
+                    <element signature="e#741#8086#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/templates/article.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2366">
+                  <caret line="94" selection-start-line="94" selection-end-line="94" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#135#177#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/templates/help-subject.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="962">
+                  <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/ArticleList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="18" column="79" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="608">
+                  <caret line="133" column="76" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
+                  <folding>
+                    <element signature="e#2396#2397#0" expanded="true" />
+                    <element signature="e#2448#2449#0" expanded="true" />
+                    <element signature="e#3534#3535#0" expanded="true" />
+                    <element signature="e#3580#3581#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="332">
+                  <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BlogPostByID</find>
+      <find>blog</find>
+      <find>blogpos</find>
+      <find>help-section</find>
+      <find>GatsbyImageSharpFluid</find>
+      <find>yaml</find>
+      <find />
+      <find>tags:</find>
+      <find>tags</find>
+      <find>post tagged with</find>
+      <find>tagged</find>
+      <find>title</find>
+      <find>ArticlePage</find>
+      <find>tag</find>
+      <find>console</find>
+      <find>HelpSectionByID</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/pages/help/visitor_sign-in.md" />
+        <option value="$PROJECT_DIR$/src/templates/help-section.jsx" />
+        <option value="$PROJECT_DIR$/src/components/BlogRoll.js" />
+        <option value="$PROJECT_DIR$/src/pages/help/index.js" />
+        <option value="$PROJECT_DIR$/src/templates/index-page.js" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/2309r8eijfk.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/asddsdasda.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/sadd.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/articles/first-article.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/articles/second-artickle.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/ui.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/User Interface.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/general.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/basic.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/articles/first-artickle.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections.yaml" />
+        <option value="$PROJECT_DIR$/src/pages/help/articles/third-artickle.md" />
+        <option value="$PROJECT_DIR$/src/templates/help.js" />
+        <option value="$PROJECT_DIR$/src/components/HelpSections.js" />
+        <option value="$PROJECT_DIR$/src/components/ArtickleList.js" />
+        <option value="$PROJECT_DIR$/src/pages/products/index.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections.yml" />
+        <option value="$PROJECT_DIR$/src/templates/help-article.js" />
+        <option value="$PROJECT_DIR$/src/pages/help/visitor-sign-in.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/user-interface.md" />
+        <option value="$PROJECT_DIR$/src/pages/tags/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/help/forth.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/articles/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Navbar.js" />
+        <option value="$PROJECT_DIR$/src/templates/article.js" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/delivery.md" />
+        <option value="$PROJECT_DIR$/src/pages/help/sections/the-basics.md" />
+        <option value="$PROJECT_DIR$/src/templates/help-subject.js" />
+        <option value="$PROJECT_DIR$/src/components/ArticleList.js" />
+        <option value="$PROJECT_DIR$/src/templates/help-section.js" />
+        <option value="$PROJECT_DIR$/gatsby-node.js" />
+        <option value="$PROJECT_DIR$/static/admin/config.yml" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="help" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="help" type="462c0819:PsiDirectoryNode" />
+              <item name="sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby-starter-netlify-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby-starter-netlify-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.GraphQL" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/help/subjects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/help" />
+      <recent name="$PROJECT_DIR$/src/pages/help/articles" />
+      <recent name="$PROJECT_DIR$/src/pages/help/sections" />
+      <recent name="$PROJECT_DIR$/src/templates" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77166f83-998d-457a-a370-fe999ba2437e" name="Default Changelist" comment="" />
+      <created>1552311286661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552311286661</updated>
+      <workItem from="1552311288009" duration="5234000" />
+      <workItem from="1552320068557" duration="3643000" />
+      <workItem from="1552483678523" duration="11886000" />
+      <workItem from="1552563186862" duration="11223000" />
+      <workItem from="1552650584902" duration="558000" />
+      <workItem from="1552820769565" duration="47493000" />
+      <workItem from="1553099734494" duration="3421000" />
+    </task>
+    <task id="LOCAL-00001" summary="p">
+      <created>1552323240561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552323240562</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pas">
+      <created>1552323322860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552323322860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sd">
+      <created>1552504471851</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552504471852</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/pages/help/sections/general.md&#10;#&#9;src/pages/help/sections/sadd.md&#10;#&#9;src/pages/help/sections/visitor-sign-in.md">
+      <created>1552563933936</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552563933936</updated>
+    </task>
+    <task id="LOCAL-00005" summary="visitor">
+      <created>1552564269047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552564269047</updated>
+    </task>
+    <task id="LOCAL-00006" summary="visitor">
+      <created>1552566756912</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552566756912</updated>
+    </task>
+    <task id="LOCAL-00007" summary="structure">
+      <created>1552577887890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552577887890</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="83458000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49889868" visible="true" weight="0.14608802" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5011013" side_tool="true" weight="0.2775061" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4987775" weight="0.19101124" />
+      <window_info anchor="bottom" id="YouTrack" order="8" />
+      <window_info anchor="bottom" id="RNConsole" order="9" />
+      <window_info anchor="bottom" id="Graph Database Console" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3299285" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5012225" side_tool="true" weight="0.3299285" />
+      <window_info anchor="bottom" id="GraphQL" order="13" weight="0.3319714" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Graph Database" order="3" />
+      <window_info anchor="right" id="Git Scope" order="4" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49889868" visible="true" weight="0.14608802" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5011013" side_tool="true" weight="0.2775061" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3299285" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3299285" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987775" weight="0.19101124" />
+      <window_info anchor="bottom" id="YouTrack" order="9" />
+      <window_info anchor="bottom" id="RNConsole" order="10" />
+      <window_info anchor="bottom" id="Graph Database Console" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3299285" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5012225" side_tool="true" weight="0.3299285" />
+      <window_info anchor="bottom" id="GraphQL" order="14" weight="0.3319714" />
+      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Graph Database" order="3" />
+      <window_info anchor="right" id="Git Scope" order="4" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="p" />
+    <MESSAGE value="pas" />
+    <MESSAGE value="sd" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/pages/help/sections/general.md&#10;#&#9;src/pages/help/sections/sadd.md&#10;#&#9;src/pages/help/sections/visitor-sign-in.md" />
+    <MESSAGE value="visitor" />
+    <MESSAGE value="structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pages/about/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BlogRoll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/d2c34ccd69f8999776b6.hot-update.json" />
+    <entry file="file://$PROJECT_DIR$/public/admin/cms.js.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/cms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2177214">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="546">
+            <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/user-s-i.md" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/visitor_sign_in.md" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections/2309r8eijfk.md" />
+    <entry file="file://$PROJECT_DIR$/public/admin/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="275" column="9" lean-forward="true" selection-start-line="238" selection-start-column="2" selection-end-line="275" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/asddsdasda.md" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/articles/first-article.md" />
+    <entry file="file://$PROJECT_DIR$/src/cms/cms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cms/preview-templates/ProductPagePreview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cms/preview-templates/IndexPagePreview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/about-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blog-post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1755">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cache/fragments/image-sharp-fragments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="179" column="15" lean-forward="true" selection-start-line="179" selection-start-column="15" selection-end-line="179" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections/general.md" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections/basic.md" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/articles/third-artickle.md" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/articles/second-artickle.md" />
+    <entry file="file://$PROJECT_DIR$/graphql.config.json" />
+    <entry file="file://$PROJECT_DIR$/graphql.schema.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/gatsby/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/articles/first-artickle.md" />
+    <entry file="file://$PROJECT_DIR$/.cache/pages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="97" column="53" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="286">
+            <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/products/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="208">
+            <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/pages/help/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/subjects/user-interface.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="442">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/subjects/visitor-sign-in.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="364">
+            <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/tags/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-749">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/tags.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HelpSections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/articles/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="78" column="27" lean-forward="true" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections/the-basics.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/subjects/forth.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="208">
+            <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="17779" column="12" selection-start-line="17779" selection-start-column="12" selection-end-line="17779" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlify.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/help-section.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2366">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#135#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/help-subject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ArticleList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="18" column="79" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gatsby-source-filesystem/create-remote-file-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6635">
+          <caret line="378" column="4" selection-start-line="378" selection-start-column="4" selection-end-line="378" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="133" column="76" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
+          <folding>
+            <element signature="e#2396#2397#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="e#3534#3535#0" expanded="true" />
+            <element signature="e#3580#3581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/sections/delivery.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="282" column="9" lean-forward="true" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
+          <folding>
+            <element signature="e#141#737#0" />
+            <element signature="e#741#8086#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

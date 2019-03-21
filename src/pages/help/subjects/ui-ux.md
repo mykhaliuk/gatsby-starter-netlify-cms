@@ -98,6 +98,9 @@ articles:
       phone.
 
 
+      ![test gif](/img/customfinal-x-691-528x-.gif "Testing gif picture")
+
+
       To record a delivery, just open the Envoy Deliveries mobile app (available
       on iOS and Android) and snap a photo of the shipping label. The rest
       happens automatically. The name on the label is processed and the delivery

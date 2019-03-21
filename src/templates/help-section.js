@@ -45,7 +45,6 @@ HelpSectionTemplate.propTypes = {
 };
 
 const HelpSection = ({ data }) => {
-  console.log('\nHelpSection data: ', data);
   const { section } = data;
 
   return (

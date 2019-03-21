@@ -19,7 +19,7 @@ export const HelpArticleTemplate = ({
   const PostContent = contentComponent || Content;
   let content;
   remark()
-    .use(toc)
+    .use(toc, {heading: 'in[ -]this[ -]article?', tight: false})
     .use(options)
     .use(html)
     .process(

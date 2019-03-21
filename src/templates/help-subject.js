@@ -4,23 +4,22 @@ import ArticleList from "../components/ArticleList";
 import { graphql } from "gatsby";
 
 export const HelpSubjectTemplate = props => {
-
   const { data } = props;
   const { subjectTitle } = data.markdownRemark.frontmatter;
-  const { articles } =  data.markdownRemark.frontmatter
-  const  {edges: sections} =  data.allMarkdownRemark
+  const { articles } = data.markdownRemark.frontmatter;
 
   return (
     <section className="section">
       <div className="container content">
-        <ArticleList articles={articles} pageTitle={subjectTitle} sections={sections}/>
+        <ArticleList articles={articles} pageTitle={subjectTitle} />
       </div>
     </section>
   );
 };
 
 HelpSubjectTemplate.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  articles: PropTypes.array
 };
 
 export default HelpSubjectTemplate;
@@ -36,23 +35,18 @@ export const pageQuery = graphql`
       frontmatter {
         subjectTitle: title
         articles {
-          section
-          title
-          description
-        }
-      }
-    }
-    allMarkdownRemark(filter: {frontmatter:{templateKey:{eq: "help-section"}}}){
-      edges{
-        node{
-          id
-          frontmatter{
-            title
-            image{
-              publicURL
-              name
+          section {
+            id
+            frontmatter {
+              title: sectionTitle
+              image {
+                name
+                publicURL
+              }
             }
           }
+          title
+          description
         }
       }
     }

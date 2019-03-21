@@ -1,18 +1,10 @@
 const _ = require("lodash");
 const path = require("path");
-const uuid = require("uuid/v1");
-const crypto = require("crypto");
-
 const { createFilePath } = require("gatsby-source-filesystem");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
-const digest = data => {
-  return crypto
-    .createHash(`md5`)
-    .update(JSON.stringify(data))
-    .digest(`hex`);
-};
-exports.createPages = ({ actions, graphql, createNodeId }) => {
-  const { createPage, createNode } = actions;
+
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   return graphql(`
     {
@@ -28,7 +20,16 @@ exports.createPages = ({ actions, graphql, createNodeId }) => {
               tags
               templateKey
               articles {
-                section
+                section {
+                  id
+                  frontmatter {
+                    title: sectionTitle
+                    image {
+                      name
+                      publicURL
+                    }
+                  }
+                }
                 title
                 description
                 body

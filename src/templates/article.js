@@ -41,7 +41,6 @@ HelpArticleTemplate.propTypes = {
 };
 
 const HelpArticle = props => {
-  console.log(props);
   const {
     helpArticle: { title, description, body }
   } = props.data;

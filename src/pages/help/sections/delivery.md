@@ -1,5 +1,5 @@
 ---
 templateKey: help-section
-title: Delivery
+sectionTitle: Delivery
 image: /img/package.svg
 ---

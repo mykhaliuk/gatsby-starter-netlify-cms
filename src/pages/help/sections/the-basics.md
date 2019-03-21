@@ -1,5 +1,5 @@
 ---
 templateKey: help-section
-title: The basics
+sectionTitle: The basics
 image: /img/the-basics.svg
 ---

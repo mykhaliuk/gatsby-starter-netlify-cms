@@ -264,9 +264,9 @@ collections:
                 name: section,
                 widget: relation,
                 collection: help-section,
-                searchFields: [title],
-                displayFields: [title],
-                valueField: title,
+                searchFields: [sectionTitle],
+                displayFields: [sectionTitle],
+                valueField: sectionTitle,
               },
               { label: Description, name: description, widget: text },
               { label: Content, name: body, widget: markdown },
@@ -275,7 +275,7 @@ collections:
 
   - name: help-section
     label: Help sections
-    identifier_field: title
+    identifier_field: sectionTitle
     create: true
     folder: src/pages/help/sections
     fields:
@@ -285,5 +285,5 @@ collections:
           widget: hidden,
           default: "help-section",
         }
-      - { label: Title, name: title, widget: string }
+      - { label: Title, name: sectionTitle, widget: string }
       - { label: Icon, name: image, widget: image }

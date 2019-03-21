@@ -4,7 +4,7 @@ image: /img/visitor-photo.svg
 title: UI & UX
 articles:
   - body: >-
-      # toc
+      # in this article
 
 
       # New challenges for the modern office
@@ -59,6 +59,9 @@ articles:
     section: Delivery
     title: About delivery management
   - body: >-
+      ## in this article
+
+
       # How Deliveries works
 
 

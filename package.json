@@ -22,6 +22,8 @@
     "gatsby-transformer-yaml": "^2.1.10",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
+    "markdown-toc": "^1.2.0",
+    "mixin-deep": "^2.0.0",
     "netlify-cms": "^2.6.0",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.9.4",
@@ -29,6 +31,11 @@
     "react": "^16.2.0",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "remark": "^10.0.1",
+    "remark-html": "^9.0.0",
+    "remark-preset-lint-recommended": "^3.0.2",
+    "remark-toc": "^5.1.1",
+    "remarkable": "^1.7.1",
     "uuid": "^3.2.1"
   },
   "keywords": [

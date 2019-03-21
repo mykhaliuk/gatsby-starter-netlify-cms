@@ -82,7 +82,7 @@ module.exports = {
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-  // It makes possible to query (populate) section fields in article
+  // populates section fields in queries
   mapping: {
     "MarkdownRemark.frontmatter.articles.section": `MarkdownRemark.frontmatter.sectionTitle`,
   },

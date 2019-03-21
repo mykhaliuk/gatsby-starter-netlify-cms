@@ -4,15 +4,28 @@ import Helmet from "react-helmet";
 // import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import remark from "remark";
+import toc from "remark-toc";
+import options from "remark-preset-lint-recommended";
+import html from "remark-html";
 
 export const HelpArticleTemplate = ({
   title,
   description,
-  content,
+  content: markdown,
   helmet,
   contentComponent
 }) => {
   const PostContent = contentComponent || Content;
+  let content;
+  remark()
+    .use(toc)
+    .use(options)
+    .use(html)
+    .process(
+      markdown,
+      (err, data) => (content = err ? "Something went wrong )):" : String(data))
+    );
 
   return (
     <section className="section">

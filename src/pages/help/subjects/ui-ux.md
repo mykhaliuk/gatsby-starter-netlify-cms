@@ -4,7 +4,7 @@ image: /img/visitor-photo.svg
 title: UI & UX
 articles:
   - body: >-
-      # toc
+      # in this article
 
 
       # New challenges for the modern office
